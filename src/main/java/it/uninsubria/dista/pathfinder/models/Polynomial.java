@@ -18,7 +18,7 @@ public class Polynomial {
 	
 	@NotNull
 	// TODO: is this correct ?
-	@ManyToMany
+	@OneToMany
 	private List<Coefficient> coefficients;
 	
 }
