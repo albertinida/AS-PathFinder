@@ -2,6 +2,7 @@ package it.uninsubria.dista.pathfinder.models;
 
 import java.util.List;
 
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
@@ -17,7 +18,7 @@ public class Polynomial {
 	
 	@NotNull
 	// TODO: is this correct ?
-	@OneToMany
+	@ManyToMany
 	private List<Coefficient> coefficients;
 	
 }
